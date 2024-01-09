@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Cuadrado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-300   flex flex-col items-center justify-around  ">
+
+ <div class="m-10 "> 
+<div id="miCuadrado" class="w-32 h-32 bg-gray-500 text-white flex items-center  justify-center ml-5   ">
+    Gris
+   </div>
+<button id="cambiarColor" class="mt-4 px-4 py-2 bg-blue-500 text-white">Cambiar Colorcito</button>
+</div>
+
+<div class="flex flex-col items-center m-10">
+   <div id="miCuadrado2" class="w-32 h-32 bg-gray-300 text-black flex items-center justify-center">
+       Mostrar Texto
+   </div>
+   <input id="inputTexto" type="text" class="mt-4 px-2 py-1 border border-gray-400" placeholder="Escribe algo...">
+   <button id="borrarContenido" class="mt-2 px-4 py-2 bg-red-500 text-white">Borrar Contenido</button>
+</div>
+
+<div class="bg-white p-8 rounded shadow-md w-96 m-10">
+    <h1 class="text-2xl font-semibold mb-4">Calculadora del indice de Masa Corporal</h1>
+    <label class="block mb-2" for="peso">Peso (KG):</label>
+    <input type="number" id="peso" class="w-full p-2 mb-4 border rounded" placeholder="Ingresa tu peso">
+    <label class="block mb-2" for="altura">Altura (CM):</label>
+    <input type="number" id="altura" class="w-full p-2 mb-4 border rounded" placeholder="Ingresa tu altura">
+    <button id="calcularTodo" class="bg-blue-500 text-white py-2 px-4 rounded">Calcular</button>
+    <input type="text" id="resultado" class="w-full p-2 mt-4 border rounded" readonly placeholder="Resultado del indice de Masa Corporal">
+  </div>
+
+  <div class="bg-white p-8 rounded shadow-md w-96 m-10">
+    <h1 class="text-2xl font-semibold mb-4">Conversor de Divisas</h1>
+    
+    <input type="number" id="monedaLocal" class="w-full p-2 mb-4 border rounded" placeholder="Cantidad en moneda local">
+
+    <input type="text" id="resultadoConvercion" class="w-full p-2 mb-4 border rounded" readonly placeholder="Resultado de la conversión">
+
+    <button id="convertirDolares" class="bg-green-700 text-white py-2 px-4 rounded mb-2 w-full">Convertir a Dólares</button>
+    <button id="convertirMonedaLocal" class="bg-green-700 text-white py-2 px-4 rounded mb-2 w-full">Convertir a Moneda Local</button>
+    <button id="borrarEntradas" class="bg-red-500 text-white py-2 px-4 rounded w-full">Borrar Entradas</button>
+  </div>
+
+<script src="./main.js"></script>
+</body>
+</html>
+
